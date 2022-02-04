@@ -30,7 +30,7 @@ object SparkSQL {
 
     //
     val sql_age = sparkSession.sql("SELECT * FROM empPersonal WHERE AgeinYrs BETWEEN 30.00 AND 40.00")
-    //sql_age.show(50,false)
+    sql_age.show(50,false)
 
     val sql_avgSalary = sparkSession.sql("SELECT AVG(Salary) FROM empBusiness")
     sql_avgSalary.show()
